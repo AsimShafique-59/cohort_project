@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { useState } from 'react';
 import { currency, getStoredAuth, requestApi } from '../lib/store';
 
@@ -32,17 +33,19 @@ export default function ProductCard({ product, onMessage }) {
 
   return (
     <article className="product-card">
-      <div className="product-image-wrap">
+      <Link href={`/product/${product.id}`} className="product-image-wrap">
         <img
           src={product.image_url || 'https://placehold.co/900x675/e8f5e9/0d6b57?text=No+Image'}
           alt={product.name}
           onError={(e) => { e.currentTarget.src = 'https://placehold.co/900x675/e8f5e9/0d6b57?text=No+Image'; }}
         />
         <span className="category-badge">{product.category || 'Featured'}</span>
-      </div>
+      </Link>
       <div className="product-body">
         <div>
-          <h3>{product.name}</h3>
+          <Link href={`/product/${product.id}`} className="product-name-link">
+            <h3>{product.name}</h3>
+          </Link>
           <p>{product.description}</p>
         </div>
         <div className="product-meta">

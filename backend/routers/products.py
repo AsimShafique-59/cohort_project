@@ -32,8 +32,8 @@ def create_product(body: ProductCreate):
     with get_db() as conn:
         with dcur(conn) as cur:
             cur.execute(
-                "INSERT INTO products (name, description, price, image_url, stock) VALUES (%s, %s, %s, %s, %s) RETURNING id",
-                (body.name, body.description, body.price, body.image_url, body.stock),
+                "INSERT INTO products (name, description, price, image_url, images, category, stock) VALUES (%s, %s, %s, %s, %s, %s, %s) RETURNING id",
+                (body.name, body.description, body.price, body.image_url, body.images, body.category, body.stock),
             )
             product_id = cur.fetchone()["id"]
             cur.execute("SELECT * FROM products WHERE id = %s", (product_id,))
