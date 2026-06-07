@@ -47,6 +47,7 @@ export default function StoreLayout({ children }) {
         </Link>
         <nav className="nav-links" aria-label="Primary navigation">
           <Link href="/products">Shop</Link>
+          <Link href="/about">About</Link>
           <Link href="/cart">Cart</Link>
           <Link href="/checkout">Checkout</Link>
           <Link href="/orders">Orders</Link>
@@ -77,6 +78,7 @@ export default function StoreLayout({ children }) {
         </div>
         <nav className="footer-nav">
           <Link href="/products">Shop</Link>
+          <Link href="/about">About</Link>
           <Link href="/cart">Cart</Link>
           <Link href="/orders">Orders</Link>
           <Link href="/account">Account</Link>
