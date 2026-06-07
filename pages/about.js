@@ -26,10 +26,10 @@ const values = [
 ];
 
 const team = [
-  { name: 'Asim Shafique', role: 'Founder & CEO', initials: 'AS' },
-  { name: 'Sara Khan', role: 'Head of Product', initials: 'SK' },
-  { name: 'Omar Tariq', role: 'Lead Engineer', initials: 'OT' },
-  { name: 'Mia Reyes', role: 'Design Director', initials: 'MR' },
+  { name: 'Asim Shafique', role: 'Team Lead', initials: 'AS' },
+  { name: 'Fatima', role: 'Frontend Developer', initials: 'FA' },
+  { name: 'Ibtiasam', role: 'Backend Developer', initials: 'IB' },
+  { name: 'Ruba', role: 'QA Engineer', initials: 'RU' },
 ];
 
 const milestones = [
