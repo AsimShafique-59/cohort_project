@@ -7,7 +7,7 @@
 - Frontend Framework: Next.js 15 or later.
 - Styling: No inline styles or external UI component libraries without prior team approval.
 - Backend / API: Use Next.js Server Actions or a dedicated FastAPI Python backend.
-- Database: Use PostgreSQL through Prisma ORM. Raw SQL is allowed only in explicit migrations.
+- Database: Use PostgreSQL through Prisma ORM. Raw SQL is allowed only in explicit migrations.test
 
 ## Architecture Principles
 
