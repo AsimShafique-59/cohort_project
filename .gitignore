@@ -4,5 +4,10 @@
 .env.*.local
 
 # Node modules
-
 node_modules/
+
+# Log files
+*.log
+*.err.log
+logs/
+.next/
